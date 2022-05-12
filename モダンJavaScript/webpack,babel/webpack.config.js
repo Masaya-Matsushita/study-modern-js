@@ -11,4 +11,19 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/react"]
+            }
+          }
+        ]
+      }
+    ]
+  }
 };
