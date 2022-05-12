@@ -1,0 +1,12 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:css": "node_modules/.bin/sass style.scss:style.css"
+  },
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}
